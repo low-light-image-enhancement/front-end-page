@@ -5,18 +5,17 @@ import {Download } from '@bit/grommet.grommet-icons.download';
 
 const  DonwloadFile = () => {
   return (
-    <div>
-        <a
+      <a
         href="/images/이후.png"
         download
         >
-          <button className='btn btn-primary'>
+          <button className='btn btn-primary customBtn'>
             <Download size='medium'/>
             저장
           </button>
+
         
-      </a>
-    </div>
+    </a>
   );
 }
 
