@@ -16,12 +16,29 @@ const FilterSidebar = ({isOpen, clickSidebar}) => {
     clickSidebar(sidebarOpen);
   },[sidebarOpen])
 
+  const contents = () => {
+    return(
+      <div>
+        <div>
+          <img src="/images/이후.png"/>
+        </div>
+        <div>
+          <img src="/images/이후.png"/>
+        </div>
+        <div>
+          <img src="/images/이후.png"/>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Sidebar
-      sidebar={<b>Sidebar content</b>}
+      sidebar={contents()}
       open={sidebarOpen}
       onSetOpen={setSidebarOpen}
-      styles={{ sidebar: { background: "white" } }}
+      shadow={false}
+      styles={{ sidebar: { background: "white", width: "400px" } }}
     >
     </Sidebar>
   );
