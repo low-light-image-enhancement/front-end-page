@@ -1,6 +1,8 @@
 import React from 'react'
 import './ImageUploaderStyle.css'
 import UploaderButton from './UploaderButton';
+import { connect } from 'react-redux';
+import { selectImage } from '../../actions';
 
 class ImageUpload extends React.Component {
   constructor(props) {
@@ -18,13 +20,13 @@ class ImageUpload extends React.Component {
     let reader = new FileReader();
     let file = e.files[0];
 
-    console.log(file)
 
     reader.onloadend = () => {
       this.setState({
         file: file,
         imagePreviewUrl: reader.result
       });
+      this.props.selectImage(reader.result)
     }
 
     reader.readAsDataURL(file)
@@ -44,12 +46,13 @@ class ImageUpload extends React.Component {
         <UploaderButton 
           _handleImageChange={this._handleImageChange.bind(this)}
         />
-        <div className="imgPreview">
+        {/* <div className="imgPreview">
           {$imagePreview}
-        </div>
+        </div> */}
       </div>
     )
   }
 }
 
-export default ImageUpload
+
+export default connect(null, {selectImage})(ImageUpload)

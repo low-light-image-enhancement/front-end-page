@@ -1,12 +1,16 @@
 import {
   SELECT_IMAGE,
 } from "../actions/types";
-import _ from "lodash";
 
-export default (state = {}, action) => {
+const INITAL_STATE = {
+  imageUrl: ''
+};
+
+
+export default (state = INITAL_STATE, action) => {
   switch (action.type) {
     case SELECT_IMAGE:
-      return { ...action.payload};
+      return {imageUrl: action.payload};
     default:
       return state;
   }

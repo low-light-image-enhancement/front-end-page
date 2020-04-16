@@ -1,13 +1,50 @@
 import React from 'react'
+import { connect } from 'react-redux';
+import {Row, Col} from 'react-bootstrap'
+ import './ImageResultStyle.css'
+import DonwloadFile from '../DownloadFile';
+import FilterSideBar from '../Sidebar'
 
-const PhotoResult = () => {
+const PhotoResult = ({imageUrl}) => {
+
+  const imagePreview = () => {
+    if(imageUrl){
+      return(
+        <img src={imageUrl}/>
+      )
+    }else{
+      return <></>
+    }
+  }
+
   return(
     <div>
-      {/* <img src="data:image/jpeg;base64,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"/> */}
-      <div className="imgPreview">
-      </div>
+      <Row>
+        <Col lg={6} md={12}>
+          <div class="font-weight-bold imageStatus h3">
+            처리 전
+          </div>
+          <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
+            {imagePreview()}
+          </div>
+        </Col>
+        <Col lg={6} md={12}>
+          <div class="font-weight-bold imageStatus h3">
+            결과 이미지
+          </div>
+          <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
+          </div>
+          <DonwloadFile />
+        </Col>
+        </Row>
     </div>
   )
 }
 
-export default PhotoResult;
+const mapStateToProps = (state) => {
+  return { 
+    imageUrl : state.image.imageUrl
+  }
+}
+
+export default connect(mapStateToProps, null)(PhotoResult);

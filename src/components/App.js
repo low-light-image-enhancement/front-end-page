@@ -4,11 +4,13 @@ import history from '../history';
 import {Container, Row, Col} from 'react-bootstrap';
 import MyNav from '../MyNav';
 import MainPage from './MainPage';
+import FilterSidebar from './Sidebar';
 
 const App = () => {
     return (
         <div>
             <MyNav />
+            <FilterSidebar/>
             <Router history={history}>
                 <div className="container">
                     <Switch>

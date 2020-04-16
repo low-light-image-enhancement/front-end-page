@@ -50,7 +50,7 @@
     lodash "^4.17.13"
     source-map "^0.5.0"
 
-"@babel/helper-annotate-as-pure@^7.8.3":
+"@babel/helper-annotate-as-pure@^7.0.0", "@babel/helper-annotate-as-pure@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.8.3.tgz#60bc0bc657f63a0924ff9a4b4a0b24a13cf4deee"
   integrity sha512-6o+mJrZBxOoEX77Ezv9zwW7WV8DdluouRKNY/IR5u/YTMuKHgugHOzYWlYvYLpLA9nPsQCAAASpCIbjI9Mv+Uw==
@@ -161,7 +161,7 @@
   dependencies:
     "@babel/types" "^7.8.3"
 
-"@babel/helper-module-imports@^7.8.3":
+"@babel/helper-module-imports@^7.0.0", "@babel/helper-module-imports@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.8.3.tgz#7fe39589b39c016331b6b8c3f441e8f0b1419498"
   integrity sha512-R0Bx3jippsbAEtzkpZ/6FIiuzOURPcMjHp+Z6xPe6DtApDJx+w7UYyOLanZqO8+wKR9G10s/FmHXvxaMd9s6Kg==
@@ -966,7 +966,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+"@babel/runtime@>=7.0.0-beta.56", "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.9.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
@@ -982,7 +982,7 @@
     "@babel/parser" "^7.8.6"
     "@babel/types" "^7.8.6"
 
-"@babel/traverse@^7.1.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.7.0", "@babel/traverse@^7.8.3", "@babel/traverse@^7.8.6", "@babel/traverse@^7.9.0":
+"@babel/traverse@^7.1.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.0", "@babel/traverse@^7.8.3", "@babel/traverse@^7.8.6", "@babel/traverse@^7.9.0":
   version "7.9.5"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.9.5.tgz#6e7c56b44e2ac7011a948c21e283ddd9d9db97a2"
   integrity sha512-c4gH3jsvSuGUezlP6rzSJ6jf8fYjLj3hsMZRx/nX0h+fmHN0w+ekubRrHPqnMec0meycA2nwCsJ7dC8IPem2FQ==
@@ -1005,6 +1005,39 @@
     "@babel/helper-validator-identifier" "^7.9.5"
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
+
+"@bit/grommet.grommet-icons.download@^4.2.0":
+  version "4.2.0"
+  resolved "https://node.bit.dev/grommet.grommet-icons.download/-/grommet.grommet-icons.download-4.2.0.tgz#0d3fd960ca745dcacf06e5ac3699df8069051080"
+  integrity sha1-DT/ZYMp0XcrPBuWsNpnfgGkFEIA=
+  dependencies:
+    "@bit/grommet.grommet-icons.internal.styled-icon" "4.2.0"
+
+"@bit/grommet.grommet-icons.internal.default-props@4.2.0", "@bit/grommet.grommet-icons.internal.default-props@^4.2.0":
+  version "4.2.0"
+  resolved "https://node.bit.dev/grommet.grommet-icons.internal.default-props/-/grommet.grommet-icons.internal.default-props-4.2.0.tgz#19b6131bc96b395fc2a5d9333440aa01a930851a"
+  integrity sha1-GbYTG8lrOV/CpdkzNECqAakwhRo=
+  dependencies:
+    "@bit/grommet.grommet-icons.internal.themes" "4.2.0"
+    "@bit/grommet.grommet-icons.internal.utils" "4.2.0"
+
+"@bit/grommet.grommet-icons.internal.styled-icon@4.2.0", "@bit/grommet.grommet-icons.internal.styled-icon@^4.2.0":
+  version "4.2.0"
+  resolved "https://node.bit.dev/grommet.grommet-icons.internal.styled-icon/-/grommet.grommet-icons.internal.styled-icon-4.2.0.tgz#2aa81be4aa6fc8add8caa9227170f58f35b5ac5e"
+  integrity sha1-Kqgb5KpvyK3YyqkicXD1jzW1rF4=
+  dependencies:
+    "@bit/grommet.grommet-icons.internal.default-props" "4.2.0"
+    grommet-styles "^0.2.0"
+
+"@bit/grommet.grommet-icons.internal.themes@4.2.0":
+  version "4.2.0"
+  resolved "https://node.bit.dev/grommet.grommet-icons.internal.themes/-/grommet.grommet-icons.internal.themes-4.2.0.tgz#540802e89ce251c56fc4137731af0651ac05dcf0"
+  integrity sha1-VAgC6JziUcVvxBN3Ma8GUawF3PA=
+
+"@bit/grommet.grommet-icons.internal.utils@4.2.0":
+  version "4.2.0"
+  resolved "https://node.bit.dev/grommet.grommet-icons.internal.utils/-/grommet.grommet-icons.internal.utils-4.2.0.tgz#6fadb59a5e94f653a0269ef6df37cef90412ff7e"
+  integrity sha1-b621ml6U9lOgJp723zfO+QQS/34=
 
 "@bit/primefaces.primereact.button@3.1.8":
   version "3.1.8"
@@ -1079,10 +1112,300 @@
   dependencies:
     "@bit/primefaces.primereact.utils.dom-handler" "3.1.8"
 
-"@bit/primefaces.primereact.utils.dom-handler@3.1.8":
+"@bit/primefaces.primereact.utils.dom-handler@3.1.8", "@bit/primefaces.primereact.utils.dom-handler@^3.1.8":
   version "3.1.8"
   resolved "https://node.bit.dev/primefaces.primereact.utils.dom-handler/-/primefaces.primereact.utils.dom-handler-3.1.8.tgz#02a740dbe15d1f47aa412ade327e394d425a412f"
   integrity sha1-AqdA2+FdH0eqQSreMn45TUJaQS8=
+
+"@bit/semantic-org.semantic-ui-react.button@^0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.button/-/semantic-org.semantic-ui-react.button-0.86.0.tgz#9a236a7f1f64ceb5b2d2d695bc93c4a8282dbef8"
+  integrity sha1-miNqfx9kzrWy0taVvJPEqCgtvvg=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.icon" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.label" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.ref" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.dimmer@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.dimmer/-/semantic-org.semantic-ui-react.dimmer-0.86.0.tgz#d80435f44d67c78fdf77d2ff0fbc1524c4dc9d25"
+  integrity sha1-2AQ19E1nx4/fd9L/D7wVJMTcnSU=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.portal" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.ref" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.icon@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.icon/-/semantic-org.semantic-ui-react.icon-0.86.0.tgz#cc9136f29d70da62f3a04644c168a458280569f6"
+  integrity sha1-zJE28p1w2mLzoEZEwWikWCgFafY=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.image@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.image/-/semantic-org.semantic-ui-react.image-0.86.0.tgz#2839dd1a2e8ec507ca454a5d854945d9e6fe21bb"
+  integrity sha1-KDndGi6OxQfKRUpdhUlF2eb+Ibs=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.dimmer" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.label" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.internal.genericd@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.internal.genericd/-/semantic-org.semantic-ui-react.internal.genericd-0.86.0.tgz#2c2a9929abe4994b9ac7d4e9e172e02b2e536cf2"
+  integrity sha1-LCqZKavkmUuax9Tp4XLgKy5TbPI=
+
+"@bit/semantic-org.semantic-ui-react.internal.utils.index@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.internal.utils.index/-/semantic-org.semantic-ui-react.internal.utils.index-0.86.0.tgz#68034b672659e393185cb1c4a7f6a51457deaa3c"
+  integrity sha1-aANLZyZZ45MYXLHEp/alFFfeqjw=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.auto-controlled-component" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.child-mapping" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.children-utils" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.class-name-builders" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.create-pagination-items" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.custom-prop-types" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.does-node-contain-click" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.event-stack" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.factories" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.get-element-type" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.get-unhandled-props" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.html-props-utils" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.is-browser" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.leven" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.make-debugger" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.normalize-offset" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.normalize-transition-duration" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.object-diff" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.ref-utils" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.utils.sui" "0.86.0"
+
+"@bit/semantic-org.semantic-ui-react.label@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.label/-/semantic-org.semantic-ui-react.label-0.86.0.tgz#f77c154a62ebea376ee068b5d6078c161fe80bb3"
+  integrity sha1-93wVSmLr6jdu4Gi11geMFh/oC7M=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.icon" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.image" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.menu@^0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.menu/-/semantic-org.semantic-ui-react.menu-0.86.0.tgz#cd2559c8e7958c5c6367a46512710dd7b539ae5a"
+  integrity sha1-zSVZyOeVjFxjZ6RlEnEN17U5rlo=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.icon" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.portal@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.portal/-/semantic-org.semantic-ui-react.portal-0.86.0.tgz#b798d73e99cb220c0d2cacd4effaf48b0ba911e8"
+  integrity sha1-t5jXPpnLIgwNLKzU7/r0iwupEeg=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.ref" "0.86.0"
+    keyboard-key "^1.0.4"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.ref@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.ref/-/semantic-org.semantic-ui-react.ref-0.86.0.tgz#54ec14e656310f87e4b21f9b1a93718ab708cd7e"
+  integrity sha1-VOwU5lYxD4fksh+bGpNxircIzX4=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.ref-utils" "0.86.0"
+    prop-types "^15.6.2"
+    react-is "^16.7.0"
+
+"@bit/semantic-org.semantic-ui-react.segment@^0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.segment/-/semantic-org.semantic-ui-react.segment-0.86.0.tgz#e1b38be904162a788a5bfcb9d2633463ca1e942d"
+  integrity sha1-4bOL6QQWKniKW/y50mM0Y8oelC0=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.sidebar@^0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.sidebar/-/semantic-org.semantic-ui-react.sidebar-0.86.0.tgz#73b4271f263d9011a7e7231418268fe69967d0b7"
+  integrity sha1-c7QnHyY9kBGn5yMUGCaP5pln0Lc=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.ref" "0.86.0"
+    "@semantic-ui-react/event-stack" "^3.1.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.utils.auto-controlled-component@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.auto-controlled-component/-/semantic-org.semantic-ui-react.utils.auto-controlled-component-0.86.0.tgz#9ca63d87b756b88bd6c9e7b8a7e93f04b02d78ba"
+  integrity sha1-nKY9h7dWuIvWyee4p+k/BLAteLo=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.child-mapping@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.child-mapping/-/semantic-org.semantic-ui-react.utils.child-mapping-0.86.0.tgz#9dc64f90531911d8f9135832c6bb4b2970130838"
+  integrity sha1-ncZPkFMZEdj5E1gyxrtLKXATCDg=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.children-utils@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.children-utils/-/semantic-org.semantic-ui-react.utils.children-utils-0.86.0.tgz#b8f250c5ea13fdf3086d9e6c3ffe11ea20f13fd1"
+  integrity sha1-uPJQxeoT/fMIbZ5sP/4R6iDxP9E=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.class-name-builders@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.class-name-builders/-/semantic-org.semantic-ui-react.utils.class-name-builders-0.86.0.tgz#a9ead89a0a98fa634137001084413b738ee0c9c6"
+  integrity sha1-qerYmgqY+mNBNwAQhEE7c47gycY=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.86.0"
+
+"@bit/semantic-org.semantic-ui-react.utils.create-pagination-items@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.create-pagination-items/-/semantic-org.semantic-ui-react.utils.create-pagination-items-0.86.0.tgz#007742536701af43913368a97ec4bb20b84cde74"
+  integrity sha1-AHdCU2cBr0ORM2ipfsS7ILhM3nQ=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.custom-prop-types@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.custom-prop-types/-/semantic-org.semantic-ui-react.utils.custom-prop-types-0.86.0.tgz#0896117078df3906bfd4aacba25ad88918bfbc4a"
+  integrity sha1-CJYRcHjfOQa/1KrLolrYiRi/vEo=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.leven" "0.86.0"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
+"@bit/semantic-org.semantic-ui-react.utils.does-node-contain-click@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.does-node-contain-click/-/semantic-org.semantic-ui-react.utils.does-node-contain-click-0.86.0.tgz#e0721d44de56937e912c3168951c259a92de3e73"
+  integrity sha1-4HIdRN5Wk36RLDFolRwlmpLePnM=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.event-stack@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.event-stack/-/semantic-org.semantic-ui-react.utils.event-stack-0.86.0.tgz#b0ef1be44387f230b30101e00e4a59eb0aff6d7b"
+  integrity sha1-sO8b5EOH8jCzAQHgDkpZ6wr/bXs=
+  dependencies:
+    "@semantic-ui-react/event-stack" "^3.1.0"
+
+"@bit/semantic-org.semantic-ui-react.utils.factories@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.factories/-/semantic-org.semantic-ui-react.utils.factories-0.86.0.tgz#660952ad295048e78fefd88cad198174fbbbc2e1"
+  integrity sha1-ZglSrSlQSOeP79iMrRmBdPu7wuE=
+  dependencies:
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.get-element-type@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.get-element-type/-/semantic-org.semantic-ui-react.utils.get-element-type-0.86.0.tgz#1a5e552038db5627938a28919154742214e3fb05"
+  integrity sha1-Gl5VIDjbVieTiiiRkVR0IhTj+wU=
+
+"@bit/semantic-org.semantic-ui-react.utils.get-unhandled-props@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.get-unhandled-props/-/semantic-org.semantic-ui-react.utils.get-unhandled-props-0.86.0.tgz#8221bebf1f5d94bf7d842c3a1874c8ab8ad58a08"
+  integrity sha1-giG+vx9dlL99hCw6GHTIq4rVigg=
+
+"@bit/semantic-org.semantic-ui-react.utils.html-props-utils@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.html-props-utils/-/semantic-org.semantic-ui-react.utils.html-props-utils-0.86.0.tgz#49ebfaf0a742df3c7a8e6e8e73bfe716ff7391ba"
+  integrity sha1-Sev68KdC3zx6jm6Oc7/nFv9zkbo=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.is-browser@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.is-browser/-/semantic-org.semantic-ui-react.utils.is-browser-0.86.0.tgz#5c673ae4396c0929c46b15d049e46ea794e5428c"
+  integrity sha1-XGc65DlsCSnEaxXQSeRup5TlQow=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.leven@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.leven/-/semantic-org.semantic-ui-react.utils.leven-0.86.0.tgz#8b741ad11ed0e619ba44c7e2beddb76a89703f1b"
+  integrity sha1-i3Qa0R7Q5hm6RMfivt23aolwPxs=
+
+"@bit/semantic-org.semantic-ui-react.utils.make-debugger@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.make-debugger/-/semantic-org.semantic-ui-react.utils.make-debugger-0.86.0.tgz#c6f6ee50a7c137bd677f9e1a782efeb5ded358ea"
+  integrity sha1-xvbuUKfBN71nf54aeC7+td7TWOo=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.is-browser" "0.86.0"
+    debug "^4.1.1"
+
+"@bit/semantic-org.semantic-ui-react.utils.normalize-offset@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.normalize-offset/-/semantic-org.semantic-ui-react.utils.normalize-offset-0.86.0.tgz#8376de01de792db42523a19740fab258e5b5360f"
+  integrity sha1-g3beAd55LbQlI6GXQPqyWOW1Ng8=
+
+"@bit/semantic-org.semantic-ui-react.utils.normalize-transition-duration@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.normalize-transition-duration/-/semantic-org.semantic-ui-react.utils.normalize-transition-duration-0.86.0.tgz#56e57a3b35636f3c8cd92b08daaa8e4545ed692c"
+  integrity sha1-VuV6OzVjbzyM2SsI2qqORUXtaSw=
+
+"@bit/semantic-org.semantic-ui-react.utils.number-to-word@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.number-to-word/-/semantic-org.semantic-ui-react.utils.number-to-word-0.86.0.tgz#276ca8e4dbd57c0179b10aa7b1ab78441991fac4"
+  integrity sha1-J2yo5NvVfAF5sQqnsat4RBmR+sQ=
+
+"@bit/semantic-org.semantic-ui-react.utils.object-diff@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.object-diff/-/semantic-org.semantic-ui-react.utils.object-diff-0.86.0.tgz#b99d26a22a9ce73df2b7eef9312dcb4f2975a966"
+  integrity sha1-uZ0moiqc5z3yt+75MS3LTyl1qWY=
+  dependencies:
+    lodash "^4.17.11"
+
+"@bit/semantic-org.semantic-ui-react.utils.ref-utils@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.ref-utils/-/semantic-org.semantic-ui-react.utils.ref-utils-0.86.0.tgz#5c904598ebcd7fc92d394e2745197c93af74be79"
+  integrity sha1-XJBFmOvNf8ktOU4nRRl8k690vnk=
+
+"@bit/semantic-org.semantic-ui-react.utils.sui@0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.utils.sui/-/semantic-org.semantic-ui-react.utils.sui-0.86.0.tgz#0ca9b0c3eb36b37831dbec6bd666b2a566525ed7"
+  integrity sha1-DKmww+s2s3gx2+xr1maypWZSXtc=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.utils.number-to-word" "0.86.0"
+    lodash "^4.17.11"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -1101,6 +1424,28 @@
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
+
+"@emotion/is-prop-valid@^0.8.8":
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+  integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
+
+"@emotion/stylis@^0.8.4":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@emotion/stylis/-/stylis-0.8.5.tgz#deacb389bd6ee77d1e7fcaccce9e16c5c7e78e04"
+  integrity sha512-h6KtPihKFn3T9fuIrwvXXUOwlx3rfUvfZIcP5a6rh8Y7zjE3O06hT5Ss4S/YI1AYhuZ1kjaE/5EaOOI2NqSylQ==
+
+"@emotion/unitless@^0.7.4":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1322,6 +1667,14 @@
   dependencies:
     lodash "^4.17.15"
     lodash-es "^4.17.15"
+
+"@semantic-ui-react/event-stack@^3.1.0":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-3.1.1.tgz#3263d17511db81a743167fe45281a24b3eb6b3c8"
+  integrity sha512-SA7VOu/tY3OkooR++mm9voeQrJpYXjJaMHO1aFCcSouS2xhqMR9Gnz0LEGLOR0h9ueWPBKaQzKIrx3FTTJZmUQ==
+  dependencies:
+    exenv "^1.2.2"
+    prop-types "^15.6.2"
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
@@ -2317,6 +2670,21 @@ babel-plugin-named-asset-import@^0.3.6:
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.6.tgz#c9750a1b38d85112c9e166bf3ef7c5dbc605f4be"
   integrity sha512-1aGDUfL1qOOIoqk9QKGIo2lANk+C7ko/fqH0uIyC71x3PEGz0uVP8ISgfEsFuG+FKmjHTvFK/nNM8dowpmUxLA==
 
+"babel-plugin-styled-components@>= 1":
+  version "1.10.7"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.7.tgz#3494e77914e9989b33cc2d7b3b29527a949d635c"
+  integrity sha512-MBMHGcIA22996n9hZRf/UJLVVgkEOITuR2SvjHLb5dSTUyR4ZRGn+ngITapes36FI3WLxZHfRhkA1ffHxihOrg==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    "@babel/helper-module-imports" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    lodash "^4.17.11"
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
+
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
@@ -2761,6 +3129,11 @@ camelcase@5.3.1, camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
+
+camelize@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/camelize/-/camelize-1.0.0.tgz#164a5483e630fa4321e5af07020e531831b2609b"
+  integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
 
 caniuse-api@^3.0.0:
   version "3.0.0"
@@ -3304,6 +3677,11 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
+css-color-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz#fea2616dc676b2962686b3af8dbdbe180b244e05"
+  integrity sha1-/qJhbcZ2spYmhrOvjb2+GAskTgU=
+
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
@@ -3374,6 +3752,15 @@ css-select@^2.0.0:
     css-what "^3.2.1"
     domutils "^1.7.0"
     nth-check "^1.0.2"
+
+css-to-react-native@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-3.0.0.tgz#62dbe678072a824a689bcfee011fc96e02a7d756"
+  integrity sha512-Ro1yETZA813eoyUp2GDBhG2j+YggidUmzO1/v9eYBKR2EHVEniE2MI/NqpTQ954BMpTPZFsGNPm46qFB9dpaPQ==
+  dependencies:
+    camelize "^1.0.0"
+    css-color-keywords "^1.0.0"
+    postcss-value-parser "^4.0.2"
 
 css-tree@1.0.0-alpha.37:
   version "1.0.0-alpha.37"
@@ -4321,6 +4708,11 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -4923,6 +5315,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
+grommet-styles@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/grommet-styles/-/grommet-styles-0.2.0.tgz#b2eac2b7e2747cb523434d21728ce5234f8ce4f4"
+  integrity sha512-0OMSYuGeyifYKpg4Gv2HzL8rUdd0ddnJ5LbCBKgDuloC71XIwr9g/Fxa6rs737MbPV7OZ4pEm4wvrjH4epzf1A==
+
 growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
@@ -5071,7 +5468,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.1.0:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -6398,6 +6795,11 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
   dependencies:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
+
+keyboard-key@^1.0.4:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/keyboard-key/-/keyboard-key-1.1.0.tgz#6f2e8e37fa11475bb1f1d65d5174f1b35653f5b7"
+  integrity sha512-qkBzPTi3rlAKvX7k0/ub44sqOfXeLc/jcnGGmj5c7BJpU8eDrEVPyhCvNYAaoubbsLm9uGWwQJO1ytQK1a9/dQ==
 
 killable@^1.0.1:
   version "1.0.1"
@@ -8741,7 +9143,7 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-is@^16.12.0, react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
+react-is@^16.12.0, react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -8763,6 +9165,17 @@ react-overlays@^3.0.1:
     prop-types "^15.7.2"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
+
+react-redux@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.0.tgz#f970f62192b3981642fec46fd0db18a074fe879d"
+  integrity sha512-EvCAZYGfOLqwV7gh849xy9/pt55rJXPwmYvI4lilPM5rUT/1NxuuN59ipdBksRVSvz0KInbPnp4IfoXJXCqiDA==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    hoist-non-react-statics "^3.3.0"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.9.0"
 
 react-router-dom@^5.1.2:
   version "5.1.2"
@@ -8852,6 +9265,14 @@ react-scripts@3.4.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-sidebar@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-sidebar/-/react-sidebar-3.0.2.tgz#cf695b5a78098e70460c847fb0c6c81cfd896c37"
+  integrity sha512-LG/JO1cJvdRqSmUT+DOhJrml/b45/UqM9nm8emcgbJb5EKNegKCObZcrRqyzVix42VfFf0odytviAAFEYYTu1Q==
+  dependencies:
+    "@babel/runtime" ">=7.0.0-beta.56"
+    prop-types "^15.6.2"
 
 react-transition-group@^2.5.1:
   version "2.9.0"
@@ -8975,6 +9396,19 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
+
+redux@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
+  integrity sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==
+  dependencies:
+    loose-envify "^1.4.0"
+    symbol-observable "^1.2.0"
 
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
@@ -9524,6 +9958,11 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
+shallowequal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
+  integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
@@ -10045,6 +10484,22 @@ style-loader@0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
+styled-components@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.1.0.tgz#2e3985b54f461027e1c91af3229e1c2530872a4e"
+  integrity sha512-0Qs2wEkFBXHFlysz6CV831VG6HedcrFUwChjnWylNivsx14MtmqQsohi21rMHZxzuTba063dEyoe/SR6VGJI7Q==
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@babel/traverse" "^7.4.5"
+    "@emotion/is-prop-valid" "^0.8.8"
+    "@emotion/stylis" "^0.8.4"
+    "@emotion/unitless" "^0.7.4"
+    babel-plugin-styled-components ">= 1"
+    css-to-react-native "^3.0.0"
+    hoist-non-react-statics "^3.0.0"
+    shallowequal "^1.1.0"
+    supports-color "^5.5.0"
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -10059,7 +10514,7 @@ supports-color@^2.0.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
 
-supports-color@^5.3.0:
+supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
@@ -10103,6 +10558,11 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
