@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import Sidebar from "react-sidebar";
 import { connect } from 'react-redux';
-import { clickSidebar } from "../../actions";
+import { clickSidebar, imageProcess } from "../../actions";
 
 
-const FilterSidebar = ({isOpen, clickSidebar}) => {
+const FilterSidebar = ({isOpen, clickSidebar, imageProcess}) => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
@@ -16,17 +16,32 @@ const FilterSidebar = ({isOpen, clickSidebar}) => {
     clickSidebar(sidebarOpen);
   },[sidebarOpen])
 
+  const imageClick = (url) => {
+    if(url){
+      imageProcess(url);
+    }
+  }
+
   const contents = () => {
     return(
       <div>
         <div>
-          <img src="/images/이후.png"/>
+          <img 
+            src="/images/이후.png"
+            onDoubleClick={() => imageClick("/images/이후.png")}
+          />
         </div>
         <div>
-          <img src="/images/이후.png"/>
+        <img 
+            src="/images/이후.png"
+            onDoubleClick={() => imageClick("/images/이후.png")}
+          />
         </div>
         <div>
-          <img src="/images/이후.png"/>
+        <img 
+            src="/images/이후.png"
+            onDoubleClick={() => imageClick("/images/이후.png")}
+          />
         </div>
       </div>
     )
@@ -45,10 +60,9 @@ const FilterSidebar = ({isOpen, clickSidebar}) => {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return { 
     isOpen : state.sidebar.isOpen
   }
 }
 
-export default connect(mapStateToProps, {clickSidebar})(FilterSidebar);
+export default connect(mapStateToProps, {clickSidebar, imageProcess})(FilterSidebar);

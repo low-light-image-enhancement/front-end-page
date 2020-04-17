@@ -1236,6 +1236,17 @@
     lodash "^4.17.11"
     prop-types "^15.6.2"
 
+"@bit/semantic-org.semantic-ui-react.progress@^0.86.0":
+  version "0.86.0"
+  resolved "https://node.bit.dev/semantic-org.semantic-ui-react.progress/-/semantic-org.semantic-ui-react.progress-0.86.0.tgz#6651fac12a6b5067227e6617d1b0e802a5f5beb3"
+  integrity sha1-ZlH6wSprUGcifmYX0bDoAqX1vrM=
+  dependencies:
+    "@bit/semantic-org.semantic-ui-react.internal.genericd" "0.86.0"
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index" "0.86.0"
+    classnames "^2.2.6"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+
 "@bit/semantic-org.semantic-ui-react.ref@0.86.0":
   version "0.86.0"
   resolved "https://node.bit.dev/semantic-org.semantic-ui-react.ref/-/semantic-org.semantic-ui-react.ref-0.86.0.tgz#54ec14e656310f87e4b21f9b1a93718ab708cd7e"

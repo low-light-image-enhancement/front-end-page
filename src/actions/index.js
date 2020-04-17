@@ -1,6 +1,7 @@
 import {
   SELECT_IMAGE,
   CLICK_SIDEBAR,
+  IMAGE_PROCESS,
 } from "./types";
 
 export const selectImage = imageUrl => dispatch => {
@@ -11,10 +12,15 @@ export const selectImage = imageUrl => dispatch => {
 };
 
 export const clickSidebar = isOpen => dispatch => {
-  console.log("input:")
-  console.log(isOpen)
   dispatch({
     type: CLICK_SIDEBAR,
     payload: isOpen
+  });
+};
+
+export const imageProcess = url => dispatch => {
+  dispatch({
+    type: IMAGE_PROCESS,
+    payload: url
   });
 };

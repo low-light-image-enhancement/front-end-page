@@ -2,7 +2,7 @@ import React from 'react'
 import './ImageUploaderStyle.css'
 import UploaderButton from './UploaderButton';
 import { connect } from 'react-redux';
-import { selectImage } from '../../actions';
+import { selectImage, imageProcess } from '../../actions';
 
 class ImageUpload extends React.Component {
   constructor(props) {
@@ -32,6 +32,10 @@ class ImageUpload extends React.Component {
     reader.readAsDataURL(file)
   }
 
+  onUpload = () =>{
+    this.props.imageProcess("/images/이후.png")
+  }
+
   render() {
     let {imagePreviewUrl} = this.state;
     let $imagePreview = null;
@@ -45,6 +49,7 @@ class ImageUpload extends React.Component {
       <div className="previewComponent">
         <UploaderButton 
           _handleImageChange={this._handleImageChange.bind(this)}
+          onUpload={this.onUpload.bind(this)}
         />
         {/* <div className="imgPreview">
           {$imagePreview}
@@ -55,4 +60,4 @@ class ImageUpload extends React.Component {
 }
 
 
-export default connect(null, {selectImage})(ImageUpload)
+export default connect(null, {selectImage, imageProcess})(ImageUpload)

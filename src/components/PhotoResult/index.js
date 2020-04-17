@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { connect } from 'react-redux';
 import {Row, Col} from 'react-bootstrap'
  import './ImageResultStyle.css'
 import DonwloadFile from '../DownloadFile';
 import FilterSideBar from '../Sidebar'
 import { clickSidebar } from '../../actions';
+import Progress from '@bit/semantic-org.semantic-ui-react.progress'
 
-const PhotoResult = ({imageUrl, clickSidebar}) => {
+const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl}) => {
+  
+  const style = <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css'/>
+
+  const [percent, setPercent] = useState(0);
+  const [isDisplayResult, setIsDisplayResult] = useState('none');
+  const [isDisplayProgress, setIsDisplayProgress] = useState('none');
 
   const sidebarClick = () => {
     clickSidebar(true);
@@ -21,6 +28,40 @@ const PhotoResult = ({imageUrl, clickSidebar}) => {
       return <></>
     }
   }
+
+
+  const myProgressBar = () => {
+    return(
+      <div>
+        {style}
+        <Progress 
+          percent={percent} 
+          indicating
+          style={{display: isDisplayProgress}}
+        >
+          {percent}
+        </Progress>
+      </div>
+    )
+  }
+  
+  const isProgress = async () => {
+    if(resultImageUrl){
+      console.log(resultImageUrl)
+      setIsDisplayProgress('block')
+      setIsDisplayResult('none')
+      setTimeout(() =>{
+          console.log(percent)
+      }, 2000)
+      setIsDisplayProgress('block')
+      setIsDisplayResult('none')
+    }
+  }
+
+  useEffect(() => {
+    isProgress()
+  }, [resultImageUrl])
+
 
   return(
     <div>
@@ -38,6 +79,8 @@ const PhotoResult = ({imageUrl, clickSidebar}) => {
             결과 이미지
           </div>
           <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
+            {myProgressBar()}
+            <img src={resultImageUrl} style={{display: isDisplayResult}}/>
           </div>
           <div className="buttonInline">
             <input 
@@ -56,7 +99,8 @@ const PhotoResult = ({imageUrl, clickSidebar}) => {
 
 const mapStateToProps = (state) => {
   return { 
-    imageUrl : state.image.imageUrl
+    imageUrl : state.image.imageUrl,
+    resultImageUrl: state.image.resultImageUrl
   }
 }
 

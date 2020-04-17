@@ -33,7 +33,8 @@ class UploaderButton extends React.Component {
 					multiple={true}
 					accept='image/*'
           maxFileSize={1000000}
-          onSelect={(e) => this.props._handleImageChange(e)}
+					onSelect={(e) => this.props._handleImageChange(e)}
+					onProgress={(e) => this.props.onUpload(e)}
 				/>
 				<Growl
 					ref={el => {

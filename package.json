@@ -12,6 +12,7 @@
     "@bit/primefaces.primereact.utils.dom-handler": "^3.1.8",
     "@bit/semantic-org.semantic-ui-react.button": "^0.86.0",
     "@bit/semantic-org.semantic-ui-react.menu": "^0.86.0",
+    "@bit/semantic-org.semantic-ui-react.progress": "^0.86.0",
     "@bit/semantic-org.semantic-ui-react.segment": "^0.86.0",
     "@bit/semantic-org.semantic-ui-react.sidebar": "^0.86.0",
     "@testing-library/jest-dom": "^4.2.4",
