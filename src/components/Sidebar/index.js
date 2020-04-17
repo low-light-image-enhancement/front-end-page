@@ -33,14 +33,14 @@ const FilterSidebar = ({isOpen, clickSidebar, imageProcess}) => {
         </div>
         <div>
         <img 
-            src="/images/이후.png"
-            onDoubleClick={() => imageClick("/images/이후.png")}
+            src="/images/후보1.png"
+            onDoubleClick={() => imageClick("/images/후보1.png")}
           />
         </div>
         <div>
         <img 
-            src="/images/이후.png"
-            onDoubleClick={() => imageClick("/images/이후.png")}
+            src="/images/후보2.png"
+            onDoubleClick={() => imageClick("/images/후보2.png")}
           />
         </div>
       </div>
