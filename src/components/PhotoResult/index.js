@@ -89,12 +89,19 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
             {myProgressBar()}
             <img src={resultImageUrl} style={{display: isDisplayResult}}/>
           </div>
-         
         </Col>
         </Row>
-        <div className="buttonInline">
-            <DonwloadFile />
-        </div>
+        <Row>
+          <Col>
+          <a
+            href="/images/이후.png"
+            download
+            className="buttonInline"
+            >
+              <DonwloadFile />
+          </a>
+          </Col>
+        </Row>
     </div>
   )
 }
