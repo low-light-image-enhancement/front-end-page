@@ -45,22 +45,26 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl}) => {
     )
   }
   
-  const isProgress = async () => {
-    if(resultImageUrl){
-      console.log(resultImageUrl)
-      setIsDisplayProgress('block')
-      setIsDisplayResult('none')
-      setTimeout(() =>{
-          console.log(percent)
-      }, 2000)
-      setIsDisplayProgress('block')
-      setIsDisplayResult('none')
-    }
-  }
-
   useEffect(() => {
-    isProgress()
+    setTimeout(() =>{
+      if(percent < 100 && percent!=0){
+        setIsDisplayProgress('block')
+        setIsDisplayResult('none')
+        setPercent(percent+10)
+      }else if(percent >= 100){
+        setIsDisplayProgress('none')
+        setIsDisplayResult('block')
+      }
+    }, 1000)
+  }, [percent])
+
+  useEffect(()=>{
+    if(resultImageUrl){
+      // start progress
+      setPercent(1);
+    }
   }, [resultImageUrl])
+
 
 
   return(
