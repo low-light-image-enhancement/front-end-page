@@ -4,10 +4,10 @@ import {Row, Col} from 'react-bootstrap'
  import './ImageResultStyle.css'
 import DonwloadFile from '../DownloadFile';
 import FilterSideBar from '../Sidebar'
-import { clickSidebar } from '../../actions';
+import { clickSidebar, imageDone } from '../../actions';
 import Progress from '@bit/semantic-org.semantic-ui-react.progress'
 
-const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl}) => {
+const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   
   const style = <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css'/>
 
@@ -54,14 +54,17 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl}) => {
       }else if(percent >= 100){
         setIsDisplayProgress('none')
         setIsDisplayResult('block')
+        imageDone(true)
       }
-    }, 1000)
+    }, 500)
   }, [percent])
 
   useEffect(()=>{
     if(resultImageUrl){
       // start progress
       setPercent(1);
+    }else{
+
     }
   }, [resultImageUrl])
 
@@ -108,4 +111,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, {clickSidebar})(PhotoResult);
+export default connect(mapStateToProps, {clickSidebar, imageDone})(PhotoResult);
