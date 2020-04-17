@@ -6,8 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './MainPage.css'
 import { connect } from 'react-redux';
 import DonwloadFile from '../DownloadFile'
+import { clickSidebar } from '../../actions';
 
-const MainPage = ({isDone}) => {
+
+const MainPage = ({isDone, clickSidebar}) => {
   const [isDisplayHistogram, setIsDisplayHistogram] = useState('none')
 
   useEffect(()=>{
@@ -20,9 +22,19 @@ const MainPage = ({isDone}) => {
 
   return(
     <>
-      <div>
-      </div>
-      <ImageUpload />
+      <Row>
+        <Col>
+          <ImageUpload />
+        </Col>
+        <Col>
+          <input 
+                className="btn btn-success filterChangeBtn" 
+                type='button' 
+                value="필터고르기"
+                onClick={()=>clickSidebar(true)}
+          />
+        </Col>
+      </Row>
       <PhotoResult />
       <Row className="histograms" style={{display: isDisplayHistogram}}>
         <Col>
@@ -48,4 +60,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, null)(MainPage)
+export default connect(mapStateToProps, {clickSidebar})(MainPage)

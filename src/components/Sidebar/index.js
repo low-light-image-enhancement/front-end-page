@@ -54,6 +54,7 @@ const FilterSidebar = ({isOpen, clickSidebar, imageProcess}) => {
       onSetOpen={setSidebarOpen}
       shadow={false}
       styles={{ sidebar: { background: "white", width: "400px" } }}
+      pullRight={true}
     >
     </Sidebar>
   );

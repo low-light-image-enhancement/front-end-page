@@ -83,23 +83,18 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
         </Col>
         <Col lg={6} md={12}>
           <div class="font-weight-bold imageStatus h3">
-            결과 이미지
+            처리 후
           </div>
           <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
             {myProgressBar()}
             <img src={resultImageUrl} style={{display: isDisplayResult}}/>
           </div>
-          <div className="buttonInline">
-            <input 
-              className="btn btn-success customBtn" 
-              type='button' 
-              value="필터고르기"
-              onClick={() => sidebarClick()}
-            />
-            <DonwloadFile />
-          </div>
+         
         </Col>
         </Row>
+        <div className="buttonInline">
+            <DonwloadFile />
+        </div>
     </div>
   )
 }
