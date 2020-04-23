@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { connect } from 'react-redux';
 import {Row, Col} from 'react-bootstrap'
- import './ImageResultStyle.css'
+import './ImageResultStyle.css'
 import DonwloadFile from '../DownloadFile';
 import FilterSideBar from '../Sidebar'
+import ImageConverter from '../ImageConverter';
 import { clickSidebar, imageDone } from '../../actions';
 import Progress from '@bit/semantic-org.semantic-ui-react.progress'
 
@@ -29,7 +30,7 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
     }
   }
 
-
+  
   const myProgressBar = () => {
     return(
       <div>
@@ -87,6 +88,7 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
           </div>
           <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
             {myProgressBar()}
+            
             <img src={resultImageUrl} style={{display: isDisplayResult}}/>
           </div>
         </Col>

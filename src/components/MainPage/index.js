@@ -8,6 +8,8 @@ import './MainPage.css'
 import { connect } from 'react-redux';
 import DonwloadFile from '../DownloadFile'
 import { clickSidebar } from '../../actions';
+import { Line } from 'react-chartjs-2';
+
 
 
 const MainPage = ({isDone, clickSidebar}) => {
@@ -21,6 +23,7 @@ const MainPage = ({isDone, clickSidebar}) => {
     }
   }, [isDone])
 
+  
   return(
     <>
       <Row>
