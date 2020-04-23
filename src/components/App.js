@@ -11,7 +11,6 @@ import {Line} from 'react-chartjs-2';
 const App = () => {
     return (
         <div>
-            <MyNav />
             <FilterSidebar/>
             <Router history={history}>
                 <div className="container">
