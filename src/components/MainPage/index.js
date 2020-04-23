@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react' 
+import { render } from 'react-dom';
 import ImageUpload from '../ImageUploader'
 import {Col, Row} from 'react-bootstrap'
 import PhotoResult from '../PhotoResult'
