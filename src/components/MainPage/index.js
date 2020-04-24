@@ -4,12 +4,11 @@ import ImageUpload from '../ImageUploader'
 import {Col, Row} from 'react-bootstrap'
 import PhotoResult from '../PhotoResult'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './MainPage.css'
 import { connect } from 'react-redux';
 import DonwloadFile from '../DownloadFile'
 import { clickSidebar } from '../../actions';
 import { Line } from 'react-chartjs-2';
-
+import styles from './MainPage.module.css'
 
 
 const MainPage = ({isDone, clickSidebar}) => {
@@ -30,25 +29,17 @@ const MainPage = ({isDone, clickSidebar}) => {
         <Col>
           <ImageUpload />
         </Col>
-        <Col>
-          <input 
-                className="btn btn-success filterChangeBtn" 
-                type='button' 
-                value="필터고르기"
-                onClick={()=>clickSidebar(true)}
-          />
-        </Col>
       </Row>
       <PhotoResult />
-      <Row className="histograms" style={{display: isDisplayHistogram}}>
+      <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
         <Col>
-          <div className="font-weight-bold imageStatus h3">
+          <div className="font-weight-bold imageStatus h3 text-white">
             Before Histogram
             <img src="/images/histoBefore.png" width="500"/>
           </div>
         </Col>
         <Col>
-          <div className="font-weight-bold imageStatus h3">
+          <div className="font-weight-bold imageStatus h3 text-white">
              After Histogram
             <img src="/images/histoAfter.png" width="500"/>
           </div>

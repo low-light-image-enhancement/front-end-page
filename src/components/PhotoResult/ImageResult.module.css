@@ -1,0 +1,52 @@
+.previewDiv{
+  width: 80%;
+  height: 70%;
+  margin-top: 80px;
+  margin: 0 auto 0px auto;
+}
+
+.notProcessed img{
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.processed img{
+  margin-top: 5%;
+  width: 100%;
+  height: 85%;
+}
+
+.sampleImgContainer{
+  float: left;
+  width: 25%;
+  /* margin: 0px 5px 0px 5px; */
+}
+
+.sampleImgs{
+  width: 100%;
+  height: 100px;
+}
+
+.sampleImg{
+  background-image: url(/images/이후.png);
+  background-size: 100% 70px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70px;
+}
+
+.gray{
+  filter: grayscale(100%);
+}
+
+.original{
+}
+
+.contrast{
+  filter: contrast(140%);
+}
+
+.saturation{
+  filter: saturate(200%);
+}
