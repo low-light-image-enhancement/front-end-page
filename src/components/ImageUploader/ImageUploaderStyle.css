@@ -7,5 +7,5 @@
 .p-button{
   background: rgb(253,115,29);
   background: linear-gradient(90deg, rgba(253,115,29,0.958420868347339) 12%, rgba(252,69,69,1) 100%);
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
