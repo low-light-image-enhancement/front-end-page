@@ -80,52 +80,53 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
     <div>
       <Row className='mt-2'>
         <Col xl={6} lg={12}>
-          <div class="font-weight-bold text-white h3">
+          <div class="font-weight-bold text-white h3 mb-3">
             처리 전
           </div>
-          <div className="imgPreview shadow mb-5 rounded pt-3">
-            <div className={styles.previewDiv}>
+          <div className="imgPreview shadow mb-5 rounded">
+            <div className={`${styles.previewDiv} ${styles.notProcessed}`}>
               {imagePreview()}
             </div>
           </div>
         </Col>
         <Col xl={6} lg={12}>
-          <div class="font-weight-bold text-white h3">
+          <div class="font-weight-bold text-white h3 mb-3">
             처리 후
           </div>
           <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
-            <div>
-              <Button.Group color='black'>
-                <Button>
-                  <Filter size='20' color="blue"/>
-                  <div>
-                    Filter
-                  </div>
-                </Button>
-                {/* <Button>Two</Button> */}
-              </Button.Group>
-            </div>
-            <div className={styles.sampleImgs}>
-            <div className={`${styles.sampleImgContainer} text-white`}>
-                <div className={styles.sampleImg}></div>
-                <div>original</div>
+            <div style={{display: isDisplayResult}}>
+              <div>
+                <Button.Group color='black'>
+                  <Button>
+                    <Filter size='20' color="blue"/>
+                    <div>
+                      Filter
+                    </div>
+                  </Button>
+                </Button.Group>
               </div>
+              <div className={styles.sampleImgs}>
               <div className={`${styles.sampleImgContainer} text-white`}>
-                <div className={`${styles.sampleImg} ${styles.gray}`}></div>
-                <div>gray</div>
-              </div>
-              <div className={`${styles.sampleImgContainer} text-white`}>
-                <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
-                <div>contrast</div>
-              </div>
-              <div className={`${styles.sampleImgContainer} text-white`}>
-                <div className={`${styles.sampleImg} ${styles.sturation}`}></div>
-                <div>bright</div>
+                  <div className={styles.sampleImg}></div>
+                  <div>original</div>
+                </div>
+                <div className={`${styles.sampleImgContainer} text-white`}>
+                  <div className={`${styles.sampleImg} ${styles.gray}`}></div>
+                  <div>gray</div>
+                </div>
+                <div className={`${styles.sampleImgContainer} text-white`}>
+                  <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
+                  <div>contrast</div>
+                </div>
+                <div className={`${styles.sampleImgContainer} text-white`}>
+                  <div className={`${styles.sampleImg} ${styles.sturation}`}></div>
+                  <div>bright</div>
+                </div>
               </div>
             </div>
        
-            <div className={styles.previewDiv}>
+            <div className={`${styles.previewDiv} ${styles.processed}`}>
               <img src={resultImageUrl} style={{display: isDisplayResult}}/>
             </div>
           </div>

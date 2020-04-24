@@ -1,8 +1,20 @@
 .previewDiv{
   width: 80%;
-  height: 80%;
+  height: 70%;
   margin-top: 80px;
-  margin: 40px auto 0px auto;
+  margin: 0 auto 0px auto;
+}
+
+.notProcessed img{
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.processed img{
+  margin-top: 5%;
+  width: 100%;
+  height: 90%;
 }
 
 .sampleImgContainer{
@@ -33,6 +45,6 @@
   filter: contrast(70%);
 }
 
-.sturation{
+.bright{
   filter: saturate(200%);
 }

@@ -40,7 +40,7 @@ const MainPage = ({isDone, clickSidebar}) => {
         </Col>
       </Row>
       <PhotoResult />
-      <Row className="histograms" style={{display: isDisplayHistogram}}>
+      <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
         <Col>
           <div className="font-weight-bold imageStatus h3 text-white">
             Before Histogram
