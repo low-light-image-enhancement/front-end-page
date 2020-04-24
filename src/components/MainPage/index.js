@@ -42,13 +42,13 @@ const MainPage = ({isDone, clickSidebar}) => {
       <PhotoResult />
       <Row className="histograms" style={{display: isDisplayHistogram}}>
         <Col>
-          <div className="font-weight-bold imageStatus h3">
+          <div className="font-weight-bold imageStatus h3 text-white">
             Before Histogram
             <img src="/images/histoBefore.png" width="500"/>
           </div>
         </Col>
         <Col>
-          <div className="font-weight-bold imageStatus h3">
+          <div className="font-weight-bold imageStatus h3 text-white">
              After Histogram
             <img src="/images/histoAfter.png" width="500"/>
           </div>

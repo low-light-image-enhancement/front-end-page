@@ -74,21 +74,20 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   return(
     <div>
       <Row>
-        <Col lg={6} md={12}>
+        <Col xl={6} lg={12}>
           <div class="font-weight-bold imageStatus h3">
             처리 전
           </div>
-          <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
+          <div className="imgPreview shadow mb-5 bg-white rounded">
             {imagePreview()}
           </div>
         </Col>
-        <Col lg={6} md={12}>
+        <Col xl={6} lg={12}>
           <div class="font-weight-bold imageStatus h3">
             처리 후
           </div>
-          <div className="imgPreview shadow p-3 mb-5 bg-white rounded">
+          <div className="imgPreview shadow mb-5 bg-white rounded">
             {myProgressBar()}
-            
             <img src={resultImageUrl} style={{display: isDisplayResult}}/>
           </div>
         </Col>
