@@ -2,6 +2,7 @@ import React from 'react';
 import { Growl } from '@bit/primefaces.primereact.growl';
 import { FileUpload } from '@bit/primefaces.primereact.fileupload';
 import PrimereactStyle from '@bit/primefaces.primereact.internal.stylelinks';
+import './ImageUploaderStyle.css'
 
 class UploaderButton extends React.Component {
 	constructor() {
