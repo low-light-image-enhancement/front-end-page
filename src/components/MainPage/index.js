@@ -29,15 +29,6 @@ const MainPage = ({isDone, clickSidebar}) => {
         <Col>
           <ImageUpload />
         </Col>
-        <Col>
-            <input   
-                  className={`${styles.filterChangeBtn} btn`}
-                  type='button' 
-                  value="필터고르기"
-                  onClick={()=>clickSidebar(true)}
-            />
-          
-        </Col>
       </Row>
       <PhotoResult />
       <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
