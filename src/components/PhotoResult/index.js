@@ -20,6 +20,10 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   const [percent, setPercent] = useState(0);
   const [isDisplayResult, setIsDisplayResult] = useState('none');
   const [isDisplayProgress, setIsDisplayProgress] = useState('none');
+  const [filter, setFilter] = useState(' ');
+  const [filterOpen, setFilterOpen] = useState(false);
+  
+
 
   const sidebarClick = () => {
     clickSidebar(true);
@@ -49,6 +53,37 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
         </Progress>
       </div>
     )
+  }
+
+  const getFilterClass = () => {
+    switch(filter){
+      case 'original':
+        return styles.original
+      case 'contrast' :
+        return styles.contrast
+      case 'gray':
+        return styles.gray
+      case 'saturation':
+        return styles.saturation
+      default:
+        return styles.original
+    }
+  }
+
+  const filterClick = (filterName) => {
+    setFilter(filterName);
+  }
+
+  const filterMenuClick = () => {
+    setFilterOpen(!filterOpen)
+  }
+
+  const isFilterOpen = () => {
+    if(filterOpen){
+      return 'block'
+    }else{
+      return 'none'
+    }
   }
   
   useEffect(() => {
@@ -96,7 +131,7 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
           <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
             <div style={{display: isDisplayResult}}>
-              <div>
+              <div onClick={() => filterMenuClick()}>
                 <Button.Group color='black'>
                   <Button>
                     <Filter size='20' color="blue"/>
@@ -106,28 +141,28 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
                   </Button>
                 </Button.Group>
               </div>
-              <div className={styles.sampleImgs}>
-              <div className={`${styles.sampleImgContainer} text-white`}>
-                  <div className={styles.sampleImg}></div>
-                  <div>original</div>
-                </div>
-                <div className={`${styles.sampleImgContainer} text-white`}>
-                  <div className={`${styles.sampleImg} ${styles.gray}`}></div>
-                  <div>gray</div>
-                </div>
-                <div className={`${styles.sampleImgContainer} text-white`}>
-                  <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
-                  <div>contrast</div>
-                </div>
-                <div className={`${styles.sampleImgContainer} text-white`}>
-                  <div className={`${styles.sampleImg} ${styles.sturation}`}></div>
-                  <div>bright</div>
-                </div>
+              <div className={styles.sampleImgs} style={{display: isFilterOpen()}}>
+                <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('original')}>
+                    <div className={styles.sampleImg}></div>
+                    <div>original</div>
+                  </div>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('gray')}>
+                    <div className={`${styles.sampleImg} ${styles.gray}`}></div>
+                    <div>gray</div>
+                  </div>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('contrast')}>
+                    <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
+                    <div>contrast</div>
+                  </div>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('saturation')}>
+                    <div className={`${styles.sampleImg} ${styles.saturation}`}></div>
+                    <div>saturation</div>
+                  </div>
               </div>
             </div>
        
             <div className={`${styles.previewDiv} ${styles.processed}`}>
-              <img src={resultImageUrl} style={{display: isDisplayResult}}/>
+              <img src={resultImageUrl} style={{display: isDisplayResult}} className={getFilterClass()}/>
             </div>
           </div>
         </Col>

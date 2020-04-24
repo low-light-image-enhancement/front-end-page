@@ -41,10 +41,13 @@
   filter: grayscale(100%);
 }
 
-.contrast{
-  filter: contrast(70%);
+.original{
 }
 
-.bright{
+.contrast{
+  filter: contrast(140%);
+}
+
+.saturation{
   filter: saturate(200%);
 }
