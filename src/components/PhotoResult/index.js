@@ -8,6 +8,10 @@ import ImageConverter from '../ImageConverter';
 import { clickSidebar, imageDone } from '../../actions';
 import Progress from '@bit/semantic-org.semantic-ui-react.progress'
 import styles from './ImageResult.module.css'
+import Filter from '@bit/feathericons.react-feather.filter';
+import { getRandomColor } from '@bit/joshk.jotils.get-random-color';
+import Button from '@bit/semantic-org.semantic-ui-react.button'
+
 
 const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   
@@ -91,6 +95,18 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
           </div>
           <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
+            <div className="text-white">
+              
+            </div>
+            <Button.Group color='black'>
+              <Button>
+                <Filter size='20' color="blue"/>
+                <div>
+                  Filter
+                </div>
+              </Button>
+              {/* <Button>Two</Button> */}
+            </Button.Group>
             <div className={styles.previewDiv}>
               <img src={resultImageUrl} style={{display: isDisplayResult}}/>
             </div>
