@@ -7,6 +7,7 @@ import FilterSideBar from '../Sidebar'
 import ImageConverter from '../ImageConverter';
 import { clickSidebar, imageDone } from '../../actions';
 import Progress from '@bit/semantic-org.semantic-ui-react.progress'
+import styles from './ImageResult.module.css'
 
 const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   
@@ -73,22 +74,26 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
 
   return(
     <div>
-      <Row>
+      <Row className='mt-2'>
         <Col xl={6} lg={12}>
-          <div class="font-weight-bold imageStatus h3">
+          <div class="font-weight-bold text-white h3">
             처리 전
           </div>
-          <div className="imgPreview shadow mb-5 bg-white rounded">
-            {imagePreview()}
+          <div className="imgPreview shadow mb-5 rounded pt-3">
+            <div className={styles.previewDiv}>
+              {imagePreview()}
+            </div>
           </div>
         </Col>
         <Col xl={6} lg={12}>
-          <div class="font-weight-bold imageStatus h3">
+          <div class="font-weight-bold text-white h3">
             처리 후
           </div>
-          <div className="imgPreview shadow mb-5 bg-white rounded">
+          <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
-            <img src={resultImageUrl} style={{display: isDisplayResult}}/>
+            <div className={styles.previewDiv}>
+              <img src={resultImageUrl} style={{display: isDisplayResult}}/>
+            </div>
           </div>
         </Col>
         </Row>

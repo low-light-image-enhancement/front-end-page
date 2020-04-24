@@ -25,7 +25,7 @@ class UploaderButton extends React.Component {
 
 	render() {
 		return (
-			<div className='content-section implementation'>
+			<div className='content-section implementation mb-4'>
 				<PrimereactStyle />
 
 				<FileUpload
