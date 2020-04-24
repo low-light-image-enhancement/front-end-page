@@ -4,3 +4,35 @@
   margin-top: 80px;
   margin: 40px auto 0px auto;
 }
+
+.sampleImgContainer{
+  float: left;
+  margin: 0px 5px 0px 5px;
+}
+
+.sampleImgs{
+  text-align: center;
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.sampleImg{
+  background-image: url(/images/이후.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.gray{
+  filter: grayscale(100%);
+}
+
+.contrast{
+  filter: contrast(70%);
+}
+
+.sturation{
+  filter: saturate(200%);
+}

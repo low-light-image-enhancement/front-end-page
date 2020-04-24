@@ -95,18 +95,36 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
           </div>
           <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
-            <div className="text-white">
-              
+            <div>
+              <Button.Group color='black'>
+                <Button>
+                  <Filter size='20' color="blue"/>
+                  <div>
+                    Filter
+                  </div>
+                </Button>
+                {/* <Button>Two</Button> */}
+              </Button.Group>
             </div>
-            <Button.Group color='black'>
-              <Button>
-                <Filter size='20' color="blue"/>
-                <div>
-                  Filter
-                </div>
-              </Button>
-              {/* <Button>Two</Button> */}
-            </Button.Group>
+            <div className={styles.sampleImgs}>
+            <div className={`${styles.sampleImgContainer} text-white`}>
+                <div className={styles.sampleImg}></div>
+                <div>original</div>
+              </div>
+              <div className={`${styles.sampleImgContainer} text-white`}>
+                <div className={`${styles.sampleImg} ${styles.gray}`}></div>
+                <div>gray</div>
+              </div>
+              <div className={`${styles.sampleImgContainer} text-white`}>
+                <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
+                <div>contrast</div>
+              </div>
+              <div className={`${styles.sampleImgContainer} text-white`}>
+                <div className={`${styles.sampleImg} ${styles.sturation}`}></div>
+                <div>bright</div>
+              </div>
+            </div>
+       
             <div className={styles.previewDiv}>
               <img src={resultImageUrl} style={{display: isDisplayResult}}/>
             </div>
