@@ -9,6 +9,7 @@ import DonwloadFile from '../DownloadFile'
 import { clickSidebar } from '../../actions';
 import Histogram from '../Histogram'
 import styles from './MainPage.module.css'
+import { Link } from 'react-router-dom';
 
 
 const MainPage = ({isDone, clickSidebar}) => {
@@ -25,7 +26,7 @@ const MainPage = ({isDone, clickSidebar}) => {
   
   return(
     <>
-      <Row>
+      {/* <Row>
         <h1><font color='white'> Low-light image enhancement testing page</font>
           </h1>
       </Row>
@@ -40,7 +41,7 @@ const MainPage = ({isDone, clickSidebar}) => {
       <Row>
         <p><font color='white'> 또한 변화된 히스토그램의 모양을 비교할 수 있습니다.</font>
           </p>
-      </Row>
+      </Row> */}
       <Row>
         <Col>
           <ImageUpload />
@@ -50,7 +51,6 @@ const MainPage = ({isDone, clickSidebar}) => {
   
       <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
       {/* <Row className="histograms mt-3 shadow-lg rounded"> */}
-        
         <Histogram  />
       </Row>
     </>
