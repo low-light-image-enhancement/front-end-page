@@ -24,3 +24,8 @@
 .filterChangeBtn:hover{
   color: white;
 }
+
+.style{
+  display:flex;
+  align-items:center;
+}
