@@ -33,7 +33,7 @@ const MainPage = ({isDone, clickSidebar}) => {
       </Row>
       <PhotoResult />
       {/* <Row className="histograms mt-3" style={{display: isDisplayHistogram}}> */}
-      <Row className="histograms mt-3">
+      <Row className="histograms mt-3 shadow-lg rounded">
         <Histogram  />
       </Row>
     </>

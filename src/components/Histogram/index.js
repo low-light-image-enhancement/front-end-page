@@ -3,10 +3,10 @@ import {Col} from 'react-bootstrap'
 import { Line } from 'react-chartjs-2';
 
 const beforeData = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['26', '52', '78', '104', '130', '156', '182', '208', '234', '255'],
   datasets: [
     {
-      label: 'My First dataset',
+      label: 'Before Histogram',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -24,17 +24,18 @@ const beforeData = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40]
+      // 여기가 데이터 셋
+      data: [65, 59, 80, 81, 56, 55, 40, 30, 20, 10]
     }
   ]
 };
 
 
 const afterData = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['26', '52', '78', '104', '130', '156', '182', '208', '234', '255'],
   datasets: [
     {
-      label: 'My First dataset',
+      label: 'After Histogram',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -52,7 +53,8 @@ const afterData = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40]
+      // 여기가 데이터 셋
+      data: [65, 59, 80, 81, 56, 55, 40, 30, 20, 10]
     }
   ]
 };
