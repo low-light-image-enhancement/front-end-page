@@ -6,6 +6,7 @@ import MyNav from '../MyNav';
 import MainPage from './MainPage';
 import FilterSidebar from './Sidebar';
 import {Line} from 'react-chartjs-2';
+import Aboutus from './Aboutus'
 
 
 const App = () => {
@@ -13,8 +14,10 @@ const App = () => {
         <div>
             <FilterSidebar/>
             <Router history={history}>
+                <MyNav/>
                 <div className="container">
                     <Switch>
+                        <Route path="/about" exact component={Aboutus}/>
                         <Route path="/" exact component={MainPage}/>
                     </Switch>
                 </div>
