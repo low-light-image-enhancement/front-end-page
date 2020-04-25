@@ -42,6 +42,9 @@
   filter: grayscale(100%);
 }
 
+.brightness{
+  filter: brightness(110%);
+}
 .original{
 }
 
@@ -52,3 +55,4 @@
 .saturation{
   filter: saturate(200%);
 }
+

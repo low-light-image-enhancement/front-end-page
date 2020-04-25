@@ -57,13 +57,13 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
 
   const getFilterClass = () => {
     switch(filter){
-      case 'original':
+      case 'HE':
         return styles.original
-      case 'contrast' :
+      case 'LIME' :
         return styles.contrast
-      case 'gray':
-        return styles.gray
-      case 'saturation':
+      case 'Ying':
+        return styles.brightness
+      case 'CycleGAN':
         return styles.saturation
       default:
         return styles.original
@@ -136,27 +136,27 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
                   <Button>
                     <Filter size='20' color="blue"/>
                     <div>
-                      Filter
+                      다른결과
                     </div>
                   </Button>
                 </Button.Group>
               </div>
               <div className={styles.sampleImgs} style={{display: isFilterOpen()}}>
-                <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('original')}>
+                <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('HE')}>
                     <div className={styles.sampleImg}></div>
-                    <div>original</div>
+                    <div>HE</div>
                   </div>
-                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('gray')}>
-                    <div className={`${styles.sampleImg} ${styles.gray}`}></div>
-                    <div>gray</div>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('Ying')}>
+                    <div className={`${styles.sampleImg} ${styles.brightness}`}></div>
+                    <div>Ying</div>
                   </div>
-                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('contrast')}>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('LIME')}>
                     <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
-                    <div>contrast</div>
+                    <div>LIME</div>
                   </div>
-                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('saturation')}>
+                  <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('CycleGAN')}>
                     <div className={`${styles.sampleImg} ${styles.saturation}`}></div>
-                    <div>saturation</div>
+                    <div>CycleGAN</div>
                   </div>
               </div>
             </div>
