@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { connect } from 'react-redux';
 import DonwloadFile from '../DownloadFile'
 import { clickSidebar } from '../../actions';
+import Histogram from '../Histogram'
 import { Line } from 'react-chartjs-2';
 import styles from './MainPage.module.css'
 
@@ -31,19 +32,9 @@ const MainPage = ({isDone, clickSidebar}) => {
         </Col>
       </Row>
       <PhotoResult />
-      <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
-        <Col>
-          <div className="font-weight-bold imageStatus h3 text-white">
-            Before Histogram
-            <img src="/images/histoBefore.png" width="500"/>
-          </div>
-        </Col>
-        <Col>
-          <div className="font-weight-bold imageStatus h3 text-white">
-             After Histogram
-            <img src="/images/histoAfter.png" width="500"/>
-          </div>
-        </Col>
+      {/* <Row className="histograms mt-3" style={{display: isDisplayHistogram}}> */}
+      <Row className="histograms mt-3 shadow-lg rounded">
+        <Histogram  />
       </Row>
     </>
   )
