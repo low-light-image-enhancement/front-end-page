@@ -7,6 +7,7 @@ import MainPage from './MainPage';
 import FilterSidebar from './Sidebar';
 import {Line} from 'react-chartjs-2';
 import Aboutus from './Aboutus'
+import MyCamera from './MyCamera';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
                 <div className="container">
                     <Switch>
                         <Route path="/about" exact component={Aboutus}/>
-                        <Route path="/" exact component={MainPage}/>
+                        <Route path="/" exact component={MyCamera}/>
                     </Switch>
                 </div>
             </Router>
