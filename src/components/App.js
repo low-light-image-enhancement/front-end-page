@@ -13,15 +13,16 @@ import MyCamera from './MyCamera';
 const App = () => {
     return (
         <div>
-            <FilterSidebar/>
+            {/* <FilterSidebar/> */}
             <Router history={history}>
-                <MyNav/>
-                <div className="container">
+                {/* <MyNav/> */}
                     <Switch>
                         <Route path="/about" exact component={Aboutus}/>
                         <Route path="/" exact component={MyCamera}/>
+                        <div className="container">
+                            <Route path="/main" exact component={MainPage}/>
+                        </div>
                     </Switch>
-                </div>
             </Router>
         </div>
     )

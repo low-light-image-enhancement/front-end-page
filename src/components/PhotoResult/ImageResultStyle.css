@@ -5,15 +5,15 @@ h3 {
 .imgPreview {
   text-align: center;
   height: 600px;
-  width: 100%;
+  width: 90%;
   background: black;
+  margin: 0 auto;
 }
 
 
 
 .buttonInline{
-  margin-left: 45%;
   width: 100px;
   height: 100px;
-  margin-right: 45%;
+  margin: 0 auto;
 }

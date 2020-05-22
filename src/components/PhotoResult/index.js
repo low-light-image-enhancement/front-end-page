@@ -114,7 +114,7 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
   return(
     <div>
       <Row className='mt-2'>
-        <Col xl={6} lg={12}>
+        {/* <Col xl={6} lg={12}>
           <div class="font-weight-bold text-white h3 mb-3">
             처리 전
           </div>
@@ -123,10 +123,10 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
               {imagePreview()}
             </div>
           </div>
-        </Col>
-        <Col xl={6} lg={12}>
-          <div class="font-weight-bold text-white h3 mb-3">
-            처리 후
+        </Col> */}
+        <Col xl={12} lg={12}>
+          <div class="font-weight-bold text-white h3 mb-3 mt-4 text-center">
+            결과
           </div>
           <div className="imgPreview shadow mb-5 rounded">
             {myProgressBar()}
@@ -142,20 +142,20 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
                 </Button.Group>
               </div>
               <div className={styles.sampleImgs} style={{display: isFilterOpen()}}>
-                <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('HE')}>
-                    <div className={styles.sampleImg}></div>
+                <div className={`${styles.sampleImgContainer} text-white`}  onClick={() => filterClick('HE')}>
+                    <div className={styles.sampleImg}  style={{backgroundImage:`url(${resultImageUrl})`}}></div>
                     <div>HE</div>
                   </div>
                   <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('Ying')}>
-                    <div className={`${styles.sampleImg} ${styles.brightness}`}></div>
+                    <div className={`${styles.sampleImg} ${styles.brightness}`} style={{backgroundImage:`url(${resultImageUrl})`}}></div>
                     <div>Ying</div>
                   </div>
                   <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('LIME')}>
-                    <div className={`${styles.sampleImg} ${styles.contrast}`}></div>
+                    <div className={`${styles.sampleImg} ${styles.contrast}`} style={{backgroundImage:`url(${resultImageUrl})`}}></div>
                     <div>LIME</div>
                   </div>
                   <div className={`${styles.sampleImgContainer} text-white`} onClick={() => filterClick('CycleGAN')}>
-                    <div className={`${styles.sampleImg} ${styles.saturation}`}></div>
+                    <div className={`${styles.sampleImg} ${styles.saturation}`} style={{backgroundImage:`url(${resultImageUrl})`}}></div>
                     <div>CycleGAN</div>
                   </div>
               </div>
@@ -168,7 +168,7 @@ const PhotoResult = ({imageUrl, clickSidebar, resultImageUrl, imageDone}) => {
         </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xs={12} className="text-center mb-4">
           <a
             href="/images/이후.png"
             download

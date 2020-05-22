@@ -42,17 +42,17 @@ const MainPage = ({isDone, clickSidebar}) => {
         <p><font color='white'> 또한 변화된 히스토그램의 모양을 비교할 수 있습니다.</font>
           </p>
       </Row> */}
-      <Row>
+      {/* <Row>
         <Col>
           <ImageUpload />
         </Col>
-      </Row>
+      </Row> */}
       <PhotoResult />
   
-      <Row className="histograms mt-3" style={{display: isDisplayHistogram}}>
+      {/* <Row className="histograms mt-3" style={{display: isDisplayHistogram}}> */}
       {/* <Row className="histograms mt-3 shadow-lg rounded"> */}
-        <Histogram  />
-      </Row>
+        {/* <Histogram  /> */}
+      {/* </Row> */}
     </>
   )
 }
